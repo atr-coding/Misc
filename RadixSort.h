@@ -2,7 +2,7 @@
 
 #include <vector>
 
-void radixSort(std::vector<int>& arr)
+inline void radixSort(std::vector<int>& arr)
 {
     int n = arr.size();
     int m = 0;
