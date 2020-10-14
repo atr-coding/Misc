@@ -12,7 +12,7 @@ public:
 	void addEntry(T item, double weight)
 	{
 		accumulatedWeight += weight;
-        Entry<T> e {accumulatedWeight, item};
+        	Entry<T> e {accumulatedWeight, item};
 		entries.push_back(e);
 	}
 
@@ -35,10 +35,10 @@ public:
 private:
 	template<typename P>
 	struct Entry
-    {
-        double accumulatedWeight;
-        P item;
-    };
+    	{
+        	double accumulatedWeight;
+        	P item;
+    	};
 
 	std::vector<Entry<T>> entries;
 	double accumulatedWeight { 0.0 };
